@@ -3,7 +3,8 @@ import 'package:flutter_my_yoga/pages/init_page.dart';
 import 'package:flutter_my_yoga/pages/login_page.dart';
 import 'package:flutter_my_yoga/utils/colors.dart';
 import 'package:flutter_my_yoga/utils/textStyles.dart';
-
+import 'package:flutter_my_yoga/pages/register_page.dart';
+import 'package:flutter_my_yoga/pages/password_reset_page.dart';
 
 //    Google Sans-Bold
 //    Google Sans-Medium
@@ -37,7 +38,7 @@ class MyYogaState extends State<MyYoga> {
         primaryColor: YogaColors.red,
         backgroundColor: YogaColors.red,
         accentColor: YogaColors.red,
-        scaffoldBackgroundColor: YogaColors.red,
+        //scaffoldBackgroundColor: YogaColors.red,
         textTheme: TextTheme(
           body1: TextStyle(
             color: YogaColors.white,
@@ -47,7 +48,7 @@ class MyYogaState extends State<MyYoga> {
 
         )
       ),
-      home: LoginPage(),//InitPage(),
+      home: PasswordRestPage(),//RegisterPage(),//LoginPage(),//InitPage(),
     );
   }
 }

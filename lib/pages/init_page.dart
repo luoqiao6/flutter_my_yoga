@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
+import 'package:flutter_my_yoga/utils/colors.dart';
 
 class InitPage extends StatefulWidget {
 
@@ -16,6 +16,7 @@ class _InitPageState extends State<InitPage> {
   Widget build(BuildContext context) {
 
     return Scaffold(
+      backgroundColor: YogaColors.red,
       body: Center(
         child: Column(
           children: <Widget>[
