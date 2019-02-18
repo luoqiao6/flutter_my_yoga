@@ -5,6 +5,8 @@ import 'package:flutter_my_yoga/utils/colors.dart';
 import 'package:flutter_my_yoga/utils/textStyles.dart';
 import 'package:flutter_my_yoga/pages/register_page.dart';
 import 'package:flutter_my_yoga/pages/password_reset_page.dart';
+import 'package:flutter_my_yoga/pages/detail_page.dart';
+
 
 //    Google Sans-Bold
 //    Google Sans-Medium
@@ -48,7 +50,7 @@ class MyYogaState extends State<MyYoga> {
 
         )
       ),
-      home: PasswordRestPage(),//RegisterPage(),//LoginPage(),//InitPage(),
+      home: DetailPage(), //PasswordRestPage(),//RegisterPage(),//LoginPage(),//InitPage(),
     );
   }
 }

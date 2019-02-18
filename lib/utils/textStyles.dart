@@ -2,6 +2,21 @@ import 'package:flutter/material.dart';
 import 'package:flutter_my_yoga/utils/colors.dart';
 
 class YogaTextStyles {
+
+  static const googleSansMedium11Black148 = TextStyle(
+    color: YogaColors.black148,
+    fontSize: 11,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w500,
+  );
+
+  static const googleSanBold40Black77 = TextStyle(
+    color: YogaColors.black77,
+    fontSize: 40,
+    fontFamily: 'GoogleSans-Bold',
+    fontWeight: FontWeight.bold,
+  );
+
   static const googleSansBold = TextStyle(
     color:YogaColors.black77,
     fontSize: 14,
@@ -42,6 +57,13 @@ class YogaTextStyles {
     fontWeight: FontWeight.bold,
   );
 
+  static const googleSanBold11Black77 = TextStyle(
+    color: YogaColors.black77,
+    fontSize: 11,
+    fontFamily: 'GoogleSans-Bold',
+    fontWeight: FontWeight.bold,
+  );
+
   static const googleSanBlack77Medium = TextStyle(
     color: YogaColors.black77,
     fontSize: 18,
@@ -76,5 +98,20 @@ class YogaTextStyles {
     fontSize: 12,
     fontFamily: 'Montserrat-Regular',
   );
+
+  static const montserratSemiBold17White = TextStyle(
+    color: YogaColors.white,
+    fontSize: 17,
+    fontFamily: 'Montserrat-SemiBold'
+  );
+
+  static const montserratSemiBold18Block77 = TextStyle(
+    color: YogaColors.black77,
+    fontSize: 18,
+    fontFamily: 'Montserrat-SemiBold',
+    fontWeight: FontWeight.bold,
+  );
+
+
 
 }

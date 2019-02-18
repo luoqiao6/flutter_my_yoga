@@ -190,7 +190,7 @@ class _PasswordRestPageState extends State<PasswordRestPage> {
                       /// Button Shape
                       Container(
                         child: SvgPicture.asset(
-                          'res/images/button_shape_196.svg',
+                          'res/images/button_shape_296.svg',
                         ),
                       ),
 
