@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
+//import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter_my_yoga/utils/colors.dart';
-import 'package:flutter_my_yoga/utils/textStyles.dart';
+//import 'package:flutter_my_yoga/utils/textStyles.dart';
 import 'package:flutter_my_yoga/widgets/card_widget.dart';
+import 'package:flutter_my_yoga/widgets/yoga_sliver_app_bar.dart';
 
 class ListPage extends StatefulWidget {
 
@@ -28,48 +29,14 @@ class _ListPage extends State<ListPage> {
               color: YogaColors.red,
             ),
 
-
-
             CustomScrollView(
-              shrinkWrap: true,
+              //shrinkWrap: true,
               slivers: <Widget>[
 
-                SliverPadding(
-                  padding: EdgeInsets.only(top: 0),
-                  sliver: SliverList(
-                    delegate: SliverChildListDelegate(
-                      [
-                        /// Header
-                        Container(
-                          padding: EdgeInsets.only(top: 16),
-                          color: YogaColors.red,
-                          child: Stack(
-                            children: <Widget>[
-                              Container(
-                                alignment: Alignment.center,
-                                height: 50,
-                                child: Text('BUSINESS PROFILE', style: YogaTextStyles.montserratSemiBold17White,),
-                              ),
-
-                              Padding(
-                                padding: EdgeInsets.only(left: 24,),
-                                child: Container(
-                                  height: 50,
-                                  child: SvgPicture.asset(
-                                    'res/images/menu_icon.svg',
-                                    height: 20,
-                                    color: YogaColors.white,
-                                  ),
-                                ),
-                              ),
-
-                            ],
-                          ),
-                        ),
-
-                      ],
-                    ),
-                  ),
+                YogaSliverAppBar(
+                  pinned: false,
+                  floating: true,
+                  maxHeight: 60,
                 ),
 
                 /// 卡片列表
@@ -86,45 +53,12 @@ class _ListPage extends State<ListPage> {
                     ),
                   ),
                 ),
-
-
               ],
               controller: ScrollController(),
             ),
 
-
-            /// Header
-//            Container(
-//              padding: EdgeInsets.only(top: 16),
-//              color: YogaColors.red,
-//              child: Stack(
-//                children: <Widget>[
-//                  Container(
-//                    alignment: Alignment.center,
-//                    height: 50,
-//                    child: Text('BUSINESS PROFILE', style: YogaTextStyles.montserratSemiBold17White,),
-//                  ),
-//
-//                  Padding(
-//                    padding: EdgeInsets.only(left: 24,),
-//                    child: Container(
-//                      height: 50,
-//                      child: SvgPicture.asset(
-//                        'res/images/menu_icon.svg',
-//                        height: 20,
-//                        color: YogaColors.white,
-//                      ),
-//                    ),
-//                  ),
-//
-//                ],
-//              ),
-//            ),
-
           ],
         ),
-
-
 
     );
   }
