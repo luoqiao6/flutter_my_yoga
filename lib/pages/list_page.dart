@@ -28,11 +28,51 @@ class _ListPage extends State<ListPage> {
               color: YogaColors.red,
             ),
 
-            /// 卡片列表
+
 
             CustomScrollView(
               shrinkWrap: true,
               slivers: <Widget>[
+
+                SliverPadding(
+                  padding: EdgeInsets.only(top: 0),
+                  sliver: SliverList(
+                    delegate: SliverChildListDelegate(
+                      [
+                        /// Header
+                        Container(
+                          padding: EdgeInsets.only(top: 16),
+                          color: YogaColors.red,
+                          child: Stack(
+                            children: <Widget>[
+                              Container(
+                                alignment: Alignment.center,
+                                height: 50,
+                                child: Text('BUSINESS PROFILE', style: YogaTextStyles.montserratSemiBold17White,),
+                              ),
+
+                              Padding(
+                                padding: EdgeInsets.only(left: 24,),
+                                child: Container(
+                                  height: 50,
+                                  child: SvgPicture.asset(
+                                    'res/images/menu_icon.svg',
+                                    height: 20,
+                                    color: YogaColors.white,
+                                  ),
+                                ),
+                              ),
+
+                            ],
+                          ),
+                        ),
+
+                      ],
+                    ),
+                  ),
+                ),
+
+                /// 卡片列表
                 SliverPadding(
                   padding: EdgeInsets.only(left: 24, right: 24),
                   sliver: SliverList(
@@ -46,38 +86,40 @@ class _ListPage extends State<ListPage> {
                     ),
                   ),
                 ),
+
+
               ],
               controller: ScrollController(),
             ),
 
 
             /// Header
-            Container(
-              padding: EdgeInsets.only(top: 16),
-              color: YogaColors.red,
-              child: Stack(
-                children: <Widget>[
-                  Container(
-                    alignment: Alignment.center,
-                    height: 50,
-                    child: Text('BUSINESS PROFILE', style: YogaTextStyles.montserratSemiBold17White,),
-                  ),
-
-                  Padding(
-                    padding: EdgeInsets.only(left: 24,),
-                    child: Container(
-                      height: 50,
-                      child: SvgPicture.asset(
-                        'res/images/menu_icon.svg',
-                        height: 20,
-                        color: YogaColors.white,
-                      ),
-                    ),
-                  ),
-
-                ],
-              ),
-            ),
+//            Container(
+//              padding: EdgeInsets.only(top: 16),
+//              color: YogaColors.red,
+//              child: Stack(
+//                children: <Widget>[
+//                  Container(
+//                    alignment: Alignment.center,
+//                    height: 50,
+//                    child: Text('BUSINESS PROFILE', style: YogaTextStyles.montserratSemiBold17White,),
+//                  ),
+//
+//                  Padding(
+//                    padding: EdgeInsets.only(left: 24,),
+//                    child: Container(
+//                      height: 50,
+//                      child: SvgPicture.asset(
+//                        'res/images/menu_icon.svg',
+//                        height: 20,
+//                        color: YogaColors.white,
+//                      ),
+//                    ),
+//                  ),
+//
+//                ],
+//              ),
+//            ),
 
           ],
         ),
