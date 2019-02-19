@@ -20,66 +20,58 @@ class _ListPage extends State<ListPage> {
 
     return Scaffold(
         //backgroundColor: YogaColors.white,
-        body: Column(
+        body: Stack(
           children: <Widget>[
+            /// 顶部红色背景
+            Container(
+              height: 154,
+              color: YogaColors.red,
+            ),
 
-            Expanded(
+            /// 卡片列表
+
+            CustomScrollView(
+              shrinkWrap: true,
+              slivers: <Widget>[
+                SliverPadding(
+                  padding: EdgeInsets.only(left: 24, right: 24),
+                  sliver: SliverList(
+                    delegate: SliverChildBuilderDelegate(
+                          (BuildContext context, int index) {
+
+                        return CardWidget();
+                      },
+
+                      childCount: 10, ///
+                    ),
+                  ),
+                ),
+              ],
+              controller: ScrollController(),
+            ),
+
+
+            /// Header
+            Container(
+              padding: EdgeInsets.only(top: 16),
+              color: YogaColors.red,
               child: Stack(
                 children: <Widget>[
-                  /// 顶部红色背景
                   Container(
-                    height: 154,
-                    color: YogaColors.red,
+                    alignment: Alignment.center,
+                    height: 50,
+                    child: Text('BUSINESS PROFILE', style: YogaTextStyles.montserratSemiBold17White,),
                   ),
 
-                  /// 卡片列表
-
-                  CustomScrollView(
-                    shrinkWrap: true,
-                    slivers: <Widget>[
-                      SliverPadding(
-                        padding: EdgeInsets.only(left: 24, right: 24),
-                        sliver: SliverList(
-                          delegate: SliverChildBuilderDelegate(
-                                (BuildContext context, int index) {
-
-                              return CardWidget();
-                            },
-
-                            childCount: 10, ///
-                          ),
-                        ),
+                  Padding(
+                    padding: EdgeInsets.only(left: 24,),
+                    child: Container(
+                      height: 50,
+                      child: SvgPicture.asset(
+                        'res/images/menu_icon.svg',
+                        height: 20,
+                        color: YogaColors.white,
                       ),
-                    ],
-                    controller: ScrollController(),
-                  ),
-
-
-                  /// Header
-                  Container(
-                    padding: EdgeInsets.only(top: 16),
-                    color: YogaColors.red,
-                    child: Stack(
-                      children: <Widget>[
-                        Container(
-                          alignment: Alignment.center,
-                          height: 50,
-                          child: Text('BUSINESS PROFILE', style: YogaTextStyles.montserratSemiBold17White,),
-                        ),
-
-                        Padding(
-                          padding: EdgeInsets.only(left: 24,),
-                          child: Container(
-                            height: 50,
-                            child: SvgPicture.asset(
-                              'res/images/menu_icon.svg',
-                              height: 20,
-                              color: YogaColors.white,
-                            ),
-                          ),
-                        ),
-
-                      ],
                     ),
                   ),
 
@@ -87,12 +79,8 @@ class _ListPage extends State<ListPage> {
               ),
             ),
 
-
-
-
-
           ],
-        )
+        ),
 
 
 
