@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_my_yoga/utils/colors.dart';
 
+//    Google Sans-Bold
+//    Google Sans-Medium
+//    Google Sans-Regular
+//    Montserrat-ExtraLight
+//    Montserrat-Medium
+//    Montserrat-Regular
+//    Montserrat-SemiBold
+//    Telegrafico-Regular
+
 class YogaTextStyles {
 
   static const googleSansMedium11Black148 = TextStyle(
@@ -10,11 +19,25 @@ class YogaTextStyles {
     fontWeight: FontWeight.w500,
   );
 
+  static const googleSansMedium10Black148 = TextStyle(
+    color: YogaColors.black148,
+    fontSize: 10,
+    fontFamily: 'GoogleSans-Medium',
+    fontWeight: FontWeight.w500,
+  );
+
   static const googleSanBold40Black77 = TextStyle(
     color: YogaColors.black77,
     fontSize: 40,
     fontFamily: 'GoogleSans-Bold',
     fontWeight: FontWeight.bold,
+  );
+
+  static const googleSanRegular14Black14 = TextStyle(
+    color:YogaColors.black77,
+    fontSize: 14,
+    fontFamily: 'GoogleSans-Regular',
+    fontWeight: FontWeight.w600,
   );
 
   static const googleSansBold = TextStyle(
@@ -64,6 +87,13 @@ class YogaTextStyles {
     fontWeight: FontWeight.bold,
   );
 
+  static const googleSanBold10Black77 = TextStyle(
+    color: YogaColors.black77,
+    fontSize: 10,
+    fontFamily: 'GoogleSans-Bold',
+    fontWeight: FontWeight.bold,
+  );
+
   static const googleSanBlack77Medium = TextStyle(
     color: YogaColors.black77,
     fontSize: 18,
@@ -105,6 +135,13 @@ class YogaTextStyles {
     fontFamily: 'Montserrat-SemiBold'
   );
 
+  static const montserratSemiBold10White = TextStyle(
+    color: YogaColors.white,
+    fontSize: 10,
+    fontFamily: 'Montserrat-SemiBold',
+    fontWeight: FontWeight.bold,
+  );
+
   static const montserratSemiBold18Block77 = TextStyle(
     color: YogaColors.black77,
     fontSize: 18,
@@ -112,6 +149,11 @@ class YogaTextStyles {
     fontWeight: FontWeight.bold,
   );
 
-
+  static const montserratSemiBold21Purple = TextStyle(
+    color: YogaColors.purple,
+    fontSize: 21,
+    fontFamily: 'Montserrat-SemiBold',
+    fontWeight: FontWeight.bold,
+  );
 
 }

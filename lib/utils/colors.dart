@@ -15,6 +15,9 @@ class YogaColors {
   static const Color white = Color.fromARGB(255, 255, 255, 255);
   static const Color black112 = Color.fromARGB(255, 112, 112, 112);
   static const Color black244 = Color.fromARGB(255, 244, 244, 244);
+  static const Color lightBlue = Color.fromARGB(255, 233, 238, 245);
+  static const Color lightPurple = Color.fromARGB(255, 208, 202, 217);
+  static const Color black5 = Color.fromARGB(40, 0, 0, 0);
 }
 
 
