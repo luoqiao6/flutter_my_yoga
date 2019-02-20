@@ -41,7 +41,7 @@ class _ListPage extends State<ListPage> {
 
                 /// 卡片列表
                 SliverPadding(
-                  padding: EdgeInsets.only(left: 24, right: 24),
+                  padding: EdgeInsets.only(left: 24, right: 24, top:  8),
                   sliver: SliverList(
                     delegate: SliverChildBuilderDelegate(
                           (BuildContext context, int index) {
