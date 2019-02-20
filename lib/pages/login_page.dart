@@ -238,17 +238,29 @@ class _LoginPageState extends State<LoginPage> {
                       ),
                         child: Image.asset('res/images/sign_in_shadow.png'),
                       ),
-                      Container(
-                        child: SvgPicture.asset(
-                          'res/images/login_button.svg',
+
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pushReplacementNamed('/list');
+                        },
+                        child: Container(
+                          child: SvgPicture.asset(
+                            'res/images/login_button.svg',
+                          ),
                         ),
                       ),
-                      Container(
 
-                        child: Text('Forgot password?', style: YogaTextStyles.googleSanRed,),
-                        alignment: Alignment.bottomCenter,
-                        height: 120,
+                      GestureDetector(
+                        onTap: () {
+                          Navigator.of(context).pushReplacementNamed('/password_reset');
+                        },
+                        child: Container(
+                          child: Text('Forgot password?', style: YogaTextStyles.googleSanRed,),
+                          alignment: Alignment.bottomCenter,
+                          height: 120,
+                        ),
                       ),
+
                     ],
                   ),
                 ),
@@ -268,25 +280,6 @@ class _LoginPageState extends State<LoginPage> {
                 ),
               ),
 
-
-//              Container(
-//                height: 50,
-//                decoration: BoxDecoration(
-//                  color: YogaColors.red,
-//                  borderRadius: BorderRadius.all(
-//                    Radius.circular(25.0)
-//                  ),
-//
-//                  boxShadow: [
-//                    BoxShadow(
-//                      color: Colors.red,
-//                      blurRadius: 10,
-//                      spreadRadius: 10,
-//                      offset: Offset(20, 20)
-//                    ),
-//                  ]
-//                ),
-//              ),
 
             ],
           ),

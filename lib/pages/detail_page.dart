@@ -294,10 +294,15 @@ class _DetailPageState extends State<DetailPage> {
                         ),
 
                         /// Button text
-                        Container(
-                          alignment: Alignment.center,
-                          padding: EdgeInsets.only(top: 36),
-                          child: Text('Reset Password', style: YogaTextStyles.buttonText,),
+                        GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pushReplacementNamed('/list');
+                          },
+                          child: Container(
+                            alignment: Alignment.center,
+                            padding: EdgeInsets.only(top: 36),
+                            child: Text('Book Now', style: YogaTextStyles.buttonText,),
+                          ),
                         ),
 
 

@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_my_yoga/utils/colors.dart';
 import 'package:flutter_my_yoga/utils/textStyles.dart';
-//import 'package:flutter_my_yoga/pages/init_page.dart';
-//import 'package:flutter_my_yoga/pages/login_page.dart';
-//import 'package:flutter_my_yoga/pages/register_page.dart';
-//import 'package:flutter_my_yoga/pages/password_reset_page.dart';
-//import 'package:flutter_my_yoga/pages/detail_page.dart';
+import 'package:flutter_my_yoga/pages/init_page.dart';
+import 'package:flutter_my_yoga/pages/login_page.dart';
+import 'package:flutter_my_yoga/pages/register_page.dart';
+import 'package:flutter_my_yoga/pages/password_reset_page.dart';
+import 'package:flutter_my_yoga/pages/detail_page.dart';
 import 'package:flutter_my_yoga/pages/list_page.dart';
 
 
@@ -41,7 +41,16 @@ class MyYogaState extends State<MyYoga> {
 
         )
       ),
-      home: ListPage(),//DetailPage(), //PasswordRestPage(),//RegisterPage(),//LoginPage(),//InitPage(),
+
+      routes: {
+        '/login': (BuildContext context) => LoginPage(),
+        '/register': (BuildContext context) => RegisterPage(),
+        '/password_reset': (BuildContext context) => PasswordRestPage(),
+        '/list' : (BuildContext context) => ListPage(),
+        '/detail' : (BuildContext context) => DetailPage(),
+      },
+
+      home: LoginPage(),//ListPage(),//DetailPage(), //PasswordRestPage(),//RegisterPage(),//LoginPage(),//InitPage(),
     );
   }
 }

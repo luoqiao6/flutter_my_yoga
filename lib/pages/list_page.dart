@@ -46,7 +46,12 @@ class _ListPage extends State<ListPage> {
                     delegate: SliverChildBuilderDelegate(
                           (BuildContext context, int index) {
 
-                        return CardWidget();
+                        return GestureDetector(
+                          onTap: () {
+                            Navigator.of(context).pushReplacementNamed('/detail');
+                          },
+                          child: CardWidget(),
+                        );
                       },
 
                       childCount: 10, ///
