@@ -67,8 +67,6 @@ class _LoginPageState extends State<LoginPage> {
                           child: SvgPicture.asset(
                             'res/images/email_icon.svg',
                             width: 134,
-
-
                             //height: 285,
                             //semanticsLabel: 'Acme Logo'
                           ),
