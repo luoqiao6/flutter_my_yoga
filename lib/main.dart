@@ -27,7 +27,7 @@ class MyYogaState extends State<MyYoga> {
   @override
   void initState() {
     _streamController.add('init');
-    Future.delayed(Duration(seconds: 5), () {
+    Future.delayed(Duration(seconds: 20), () {
       _streamController.add('login');
     });
 
