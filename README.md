@@ -5,20 +5,34 @@
 UI 设计来自 [http://freebielobster.com](http://freebielobster.com/index.php/home/post/Yoga-App-Ui-Freebie)，仅供学习使用。
 
 
-
-![init page](https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/init_page.png){:height="50%" width="50%"}
-
-
-![login page](https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/login_page.png){:height="50%" width="50%"}
+<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/init_page.png">
+    <img src="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/init_page.png" alt="init page" style="max-width:50%;">
+</a>
 
 
-![register page](https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/register_page.png){:height="50%" width="50%"}
+<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/login_page.png">
+    <img src="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/login_page.png" alt="login page" style="max-width:50%;">
+</a>
+
+<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/register_page.png">
+    <img src="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/register_page.png" alt="register page" style="max-width:50%;">
+</a>
+
+<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/list_page.png">
+    <img src="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/list_page.png" alt="list page" style="max-width:50%;">
+</a>
 
 
-![list page](https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/list_page.png){:height="50%" width="50%"}
+<a target="_blank" rel="noopener noreferrer" href="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/detail_page.png">
+    <img src="https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/detail_page.png" alt="detail page" style="max-width:50%;">
+</a>
 
 
-![detail page](https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/detail_page.png){:height="50%" width="50%"}
+<!--
+![list page](https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/list_page.png)
 
 
+![detail page](https://raw.githubusercontent.com/luoqiao6/flutter_my_yoga/master/screenshot/detail_page.png)
+
+-->
 
